@@ -1,0 +1,16 @@
+enable  : true
+title   : Design Partners
+members  :
+  - image       : images/team/Dani.jpeg
+    name        : Dani M
+    designation : Freelance technical consultant
+    medium      : https://alifelivedfully.medium.com/
+    linkedin    : https://www.linkedin.com/
+    instagram   : https://www.instagram.com/
+
+  - image       : images/team/Miranda.jpg
+    name        : Miranda 
+    designation : Freelance artist
+    medium      : https://www.medium.com/
+    linkedin    : https://www.linkedin.com/
+    instagram   : https://www.instagram.com/

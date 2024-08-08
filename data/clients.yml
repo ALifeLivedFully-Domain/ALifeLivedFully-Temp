@@ -1,0 +1,6 @@
+enable        : true
+title         : "Past clients and employers"
+client_logos  : 
+  ["images/clients/Spark-Y.png", 
+  "images/clients/Remote-Start-MN.png", 
+  "images/clients/Nifty-Miners.png"]
