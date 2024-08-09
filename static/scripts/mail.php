@@ -9,23 +9,8 @@ $aboutproject = $_POST['aboutProject'];
 $header = "From:".$name."<".$email.">\r\n";
 $recipient = "info@alifelivedfully.com";
 $subject = "New contact form submission";
-$message = "
-Name: 
-".$name."
-
-Phone: 
-".$phone."
-
-Email: 
-".$email."
-
-Project Type: 
-".$projecttype."
-
-About The Project: 
-".$aboutproject."
-
-";
+// $message = "Name: ".$name."Phone: ".$phone."Email: ".$email."Project Type: ".$projecttype."About The Project: ".$aboutproject."";
+$message = "This is a test";
 
 mail($recipient,$subject,$message,$header)
 or die("Error!");
