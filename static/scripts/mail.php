@@ -10,9 +10,9 @@ $aboutproject = $_POST['aboutProject'];
 $recipient = "info@alifelivedfully.com";
 $subject = "New contact form submission";
 // $message = "Name: ".$name."Phone: ".$phone."Email: ".$email."Project Type: ".$projecttype."About The Project: ".$aboutproject."";
-$message = "This is a test";
+// $message = "This is a test";
 
-mail($recipient,$subject,$message)
+mail($recipient,$subject,$aboutproject)
   echo "Message sent"
   or die("Error!");
 
