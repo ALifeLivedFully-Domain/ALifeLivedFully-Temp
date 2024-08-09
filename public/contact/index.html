@@ -110,13 +110,13 @@
       <div class="col-lg-6 ml-auto">
         <div class="site-contact-form">
           <h4>TELL US ABOUT YOUR PROJECT</h4>
-          <form id="contact-form" action="https://fabform.io/f/USAg2Jl" method="post">
+          <form id="contact-form" action="scripts/mail.php" method="post">
             <div class="row">
               <div class="col-lg-6">
-                <input type="text" class="form-control" name="first-name" id="first-name" placeholder="First Name" required>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
               </div>
               <div class="col-lg-6">
-                <input type="text" class="form-control" name="last-name" id="last-name" placeholder="Last Name" required>
+                <input type="text" class="form-control" name="phone-number" id="phone" placeholder="Phone Number">
               </div>
               <div class="col-lg-6">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
@@ -126,9 +126,15 @@
                   <select class="form-control" id="projectType" name="project-type" required>
                     <option value="" selected disabled hidden>Project Type</option>
                     
-                    <option value="gd">Graphics Design</option>
+                    <option value="Web Development">Web Development</option>
                     
-                    <option value="wd">Web Design</option>
+                    <option value="Systems Automation">Systems Automation</option>
+                    
+                    <option value="Self Sufficiency Education">Self Sufficiency Education</option>
+                    
+                    <option value="Sustainability Education">Sustainability Education</option>
+                    
+                    <option value="Other">Other</option>
                     
                   </select>
                 </div>
@@ -149,7 +155,6 @@
             </div>
           </form>
           <p class="contact-form-generator">
-          <a href="https://fabform.io/" target="_blank">form backend service</a>
           </p>
         </div>
       </div>
@@ -169,15 +174,15 @@
           <h5 class="site-footer-widget-title">Contact Info</h5>
           <p class="site-footer-widget-description">
 	    
-              713 Elmwood St.<br>Prior Lake, MN 55372
+              681 17th Ave NE,<br>Minneapolis MN 55413
 	      <br>
 	    
 	    
-              <a href="tel:409-896-1444">409-896-1444</a>
+              <a href="tel:&#43;1%20507-414-7710">&#43;1 507-414-7710</a>
               <br>
 	    
 	    
-              <a href="mailto:info@roxo.co">info@roxo.co</a>
+              <a href="mailto:info@ALifeLivedFully.com">info@ALifeLivedFully.com</a>
 	    
           </p>
         </div>
@@ -191,9 +196,11 @@
             
             <li><a href="http://localhost:1313/about">About Company</a></li>
             
-            <li><a href="http://localhost:1313/portfolio">Projects</a></li>
-            
             <li><a href="http://localhost:1313/blog">Blog</a></li>
+            
+            <li><a href="http://localhost:1313/portfolio">Portfolio</a></li>
+            
+            <li><a href="http://localhost:1313/services">Services</a></li>
             
             <li><a href="http://localhost:1313/contact">Contact</a></li>
             
@@ -204,16 +211,16 @@
       
       <div class="col-lg-2 col-md-6">
         <div class="site-footer-widget">
-          <h5 class="site-footer-widget-title">Social Media</h5>
+          <h5 class="site-footer-widget-title">Links</h5>
           <ul class="site-footer-widget-links">
             
-              <li><a href="#">Medium</a></li>
+              <li><a href="https://links.alifelivedfully.com">All My Links</a></li>
             
-              <li><a href="#">Behance</a></li>
+              <li><a href="https://keybase.io/alifelivedfully">KeyBase</a></li>
             
-              <li><a href="#">Dribbble</a></li>
+              <li><a href="https://github.com/ALifeLivedFully">GitHub</a></li>
             
-              <li><a href="#">Instagram</a></li>
+              <li><a href="https://patreon.com/ALifeLivedFully">Patreon</a></li>
             
           </ul>
         </div>
@@ -222,9 +229,9 @@
       
       <div class="col-lg-3 col-md-6">
         <div class="site-footer-widget">
-          <h5 class="site-footer-widget-title">We help brands:</h5>
+          <h5 class="site-footer-widget-title">ALifeLivedFully</h5>
           <p class="site-footer-widget-description">
-            develop design solutions<br>produce valuable cultural content<br>create fresh brand experience
+            Freelance technical consultant, Systems automation, and Self sufficiency education.
           </p>
         </div>
       </div>
@@ -233,7 +240,7 @@
         <a href="#top" class="site-footer-widget-top">
           <img src="http://localhost:1313/images/to-top.svg" alt="back-to-top">
           <p>
-	    I want to <br> visit again
+	    Back to top
           </p>
         </a>
       </div>
