@@ -45,6 +45,7 @@ summarylength = 25
   # Contact Form
   [params.contactForm]
     form_action                   = "/scripts/mail.php"
+    form_method                   = "GET"
     placeholder_name              = "Name"
     placeholder_phone_number      = "Phone Number"
     placeholder_email             = "Email"
