@@ -10,7 +10,7 @@
       <div class="col-lg-6 ml-auto">
         <div class="site-contact-form">
           <h4>{{ .Params.form_heading }}</h4>
-          <form id="contact-form" action="{{ .Site.Params.fabform }}" method="post">
+          <form id="contact-form" action="{{ .Site.Params.contactForm.form_action }}" method="post">
             <div class="row">
               <div class="col-lg-6">
                 <input type="text" class="form-control" name="name" id="name" placeholder="{{ .Site.Params.contactForm.placeholder_name }}" required>

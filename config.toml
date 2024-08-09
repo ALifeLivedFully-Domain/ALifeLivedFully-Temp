@@ -41,13 +41,12 @@ summarylength = 25
   author = "ALifeLivedFully"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
-  # using self hosted php to mail form submissions
-  fabform  = "scripts/mail.php"
 
   # Contact Form
   [params.contactForm]
-    placeholder_name        = "Name"
-    placeholder_phone_number         = "Phone Number"
+    form_action                   = "scripts/mail.php"
+    placeholder_name              = "Name"
+    placeholder_phone_number      = "Phone Number"
     placeholder_email             = "Email"
     placeholder_project_type      = "Project Type"
     placeholder_about_the_project = "About the Project"
