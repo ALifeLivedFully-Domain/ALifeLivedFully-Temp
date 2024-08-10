@@ -1,7 +1,7 @@
 <h1> Mail.php </h1>
 
 <?php
-echo <p> echo before </p>
+echo "<p> echo before </p>";
 // echo <pre>
 // $_GET
 // echo </pre>
@@ -21,5 +21,5 @@ $message = "Name: " . "\r\n" . $name . "\r\n" . "\r\n" . "Phone: " . "\r\n" . $p
 
 mail($to, $subject, $message, $headers);
 
-echo <p> echo after </p>
+echo "<p> echo after </p>";
 ?>
