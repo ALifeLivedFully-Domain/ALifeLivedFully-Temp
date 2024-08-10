@@ -12,4 +12,5 @@ $headers = "From: webmaster@alifelivedfully.com" . "\r\n" .
     "Reply-To: " . $email . "\r\n";
 
 mail($to, $subject, $message, $headers);
+echo "<p>Message Sent</p>";
 ?>
