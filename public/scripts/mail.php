@@ -1,7 +1,7 @@
 <?php
 
 echo <pre>
-$_POST
+$_GET
 echo </pre>
 
 // $name = $_POST['name'];
