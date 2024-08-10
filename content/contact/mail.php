@@ -1,5 +1,7 @@
-<?php
+<h1> Mail.php </h1>
 
+<?php
+echo <p> echo before </p>
 // echo <pre>
 // $_GET
 // echo </pre>
@@ -11,8 +13,7 @@ $projecttype = $_POST['project-type'];
 $aboutproject = $_POST['about-project'];
 
 $headers = "From: webmaster@alifelivedfully.com" . "\r\n" .
-    "Reply-To: " . $email . "\r\n" .
-    "X-Mailer: PHP/" . phpversion();
+    "Reply-To: " . $email . "\r\n";
 
 $to = "info@alifelivedfully.com";
 $subject = "New contact form submission";
@@ -20,5 +21,5 @@ $message = "Name: " . "\r\n" . $name . "\r\n" . "\r\n" . "Phone: " . "\r\n" . $p
 
 mail($to, $subject, $message, $headers);
 
-echo <h1> Mail.php </h1>
+echo <p> echo after </p>
 ?>
