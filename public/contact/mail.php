@@ -1,8 +1,6 @@
 <?php
 
-// echo <pre>
-// $_GET
-// echo </pre>
+echo <h1> Mail.php </h1>
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -20,6 +18,4 @@ $message = "Name: " . "\r\n" . $name . "\r\n" . "\r\n" . "Phone: " . "\r\n" . $p
 
 mail($to, $subject, $message, $headers)
   or die("Error!");
-
-echo <h1> Mail.php </h1>
 ?>
