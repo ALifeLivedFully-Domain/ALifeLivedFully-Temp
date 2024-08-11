@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 
     $subject    =   "Requesting quote for project type: " . $projecttype;
 
-    $headers    =   "From: " . $email . "\r\n" .
+    $headers    =   "From: info@alifelivedfully.com" . "\r\n" .
                     "Reply-To: " . $email . "\r\n";
 
     $message    =   "Name: " . "\r\n" . $name . "\r\n" . "\r\n" . 
@@ -36,3 +36,15 @@ if (isset($_POST['submit'])) {
     $message_sent = true;
 }
 ?>
+
+<?php
+if ($message_sent):
+?>
+
+<h1>Message sent</h1>
+
+<?php
+else:
+?>
+
+<h1> </h1>
