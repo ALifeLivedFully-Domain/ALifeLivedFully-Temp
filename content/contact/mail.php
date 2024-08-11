@@ -35,16 +35,8 @@ if (isset($_POST['submit'])) {
     // Update message sent var
     $message_sent = true;
 }
+
+if ($message_sent) {
+    echo "Message sent";
+}
 ?>
-
-<?php
-if ($message_sent):
-?>
-
-<h1>Message sent</h1>
-
-<?php
-else:
-?>
-
-<h1> </h1>
