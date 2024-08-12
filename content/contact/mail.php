@@ -1,10 +1,20 @@
 <?php
+$data = array(
+            'secret' => "my-secret (should start with 0x..)",
+            'response' => $_POST['h-captcha-response']
+        );
+$verify = curl_init();
+curl_setopt($verify, CURLOPT_URL, "https://hcaptcha.com/siteverify");
+curl_setopt($verify, CURLOPT_POST, true);
+curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($verify);
 
-// set message sent to false by defailt
-$message_sent = false;
+// var_dump($response);
 
-// Validate user has submitted form
-if (isset($_POST['submit'])) {
+$responseData = json_decode($response);
+if($responseData->success) {
+    // Excecutes only if a valid captcha is completed
 
     // Sanitize user input
     $name           = filter_input(INPUT_POST, "name", FILTER_SANITIZE_SPECIAL_CHARS);
@@ -34,9 +44,9 @@ if (isset($_POST['submit'])) {
 
     // Update message sent var
     $message_sent = true;
-}
-
-if ($message_sent) {
-    echo "Message sent";
-}
-?>
+    echo "Success";
+} 
+else {
+   // return error to user; they did not pass
+   echo "Captcha not completed or not passed, please try again.";
+}?>

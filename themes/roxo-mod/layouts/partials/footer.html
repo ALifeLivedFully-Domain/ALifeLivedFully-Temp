@@ -68,7 +68,7 @@
       </div>
       <div class="col-12">
         <div class="site-footer-copyright">
-          <p>© Copyright {{ dateFormat "2006" now }} - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> </p>
+          <p>© Copyright {{ dateFormat "2006" now }} - All Rights Reserved by <a href="https://alifelivedfully.com/" target="_blank">ALifeLivedFully</a> </p>
         </div>
       </div>
     </div>
@@ -101,4 +101,6 @@
 {{ $vendor := resources.Get "js/vendor.js" | minify }}
 <script src="{{ $vendor.Permalink }}"></script>
 {{ $script := resources.Get "js/script.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>
+{{ $script := resources.Get "js/hcaptcha.js" | minify }}
 <script src="{{ $script.Permalink }}"></script>
