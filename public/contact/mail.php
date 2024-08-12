@@ -1,13 +1,4 @@
 <?php
-$("form").submit(function(event) {
-
-    var hcaptchaVal = $('[name=h-captcha-response]').value;
-    if (hcaptchaVal === "") {
-       event.preventDefault();
-       alert("Please complete the hCaptcha");
-    }
- });
-
 $data = array(
             'secret' => "my-secret (should start with 0x..)",
             'response' => $_POST['h-captcha-response']

@@ -13,13 +13,13 @@
           <form id="contact-form" action="{{ .Site.Params.contactForm.form_action }}" method="{{ .Site.Params.contactForm.form_method }}">
             <div class="row">
               <div class="col-lg-6">
-                <input type="text" class="form-control" name="name" id="name" placeholder="{{ .Site.Params.contactForm.placeholder_name }}" required>
+                <input type="text" class="form-control" maxlength="30" name="name" id="name" placeholder="{{ .Site.Params.contactForm.placeholder_name }}" required>
               </div>
               <div class="col-lg-6">
-                <input type="text" class="form-control" name="phone" id="phone" placeholder="{{ .Site.Params.contactForm.placeholder_phone_number }}">
+                <input type="text" minlength="10" maxlength="20" class="form-control" name="phone" id="phone" placeholder="{{ .Site.Params.contactForm.placeholder_phone_number }}">
               </div>
               <div class="col-lg-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="{{ .Site.Params.contactForm.placeholder_email }}" required>
+                <input type="email" class="form-control" minlength="6" maxlength="100" name="email" id="email" placeholder="{{ .Site.Params.contactForm.placeholder_email }}" required>
               </div>
               <div class="col-lg-6">
                 <div class="select-wrapper">
@@ -32,7 +32,7 @@
                 </div>
               </div>
               <div class="col-12">
-                <textarea required minlength="40" class="form-control" id="aboutProject" name="about-project" rows="6" placeholder="{{ .Site.Params.contactForm.placeholder_about_the_project }}"></textarea>
+                <textarea required minlength="40" maxlength="1000" class="form-control" id="aboutProject" name="about-project" rows="6" placeholder="{{ .Site.Params.contactForm.placeholder_about_the_project }}"></textarea>
               </div>
               <div class="h-captcha" data-sitekey="1dc057b6-d490-4716-8976-8fb0f0e409a2"></div>
               <div class="col-13">
